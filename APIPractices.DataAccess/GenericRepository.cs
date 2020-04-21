@@ -19,6 +19,7 @@ namespace APIPractices.DataAccess
             this.db = DB;
             table = db.Set<T>();
         }
+        
         public int Add(T entity)
         {
             table.Add(entity);

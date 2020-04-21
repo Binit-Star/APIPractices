@@ -34,6 +34,7 @@ namespace APIPractices
         {
             services.AddDbContextPool<APIPracticesDB>(options=>options.UseSqlServer(Configuration.GetConnectionString("APIPracticesDBConnection")));
             services.AddControllers();
+            
             services.AddScoped<IProducts, DBProducts>();
             services.AddScoped<IHomeServices, HomeServices>();
         }

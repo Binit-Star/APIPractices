@@ -7,10 +7,14 @@ using System.Threading.Tasks;
 
 namespace APIPractices.DataAccess
 {
+    
     public class DBProducts : GenericRepository<ProductsModel>, IProducts
     {
-        
-        
+
+        public DBProducts(APIPracticesDB db):base(db)
+        {
+
+        }
 
         
     }

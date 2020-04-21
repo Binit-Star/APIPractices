@@ -8,6 +8,8 @@ namespace APIPractices.Models
 {
     public class APIPracticesDB:DbContext
     {
+       
+
         public APIPracticesDB(DbContextOptions<APIPracticesDB> options):base(options)
         {
 
