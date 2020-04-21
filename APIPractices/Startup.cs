@@ -56,6 +56,8 @@ namespace APIPractices
             {
                 endpoints.MapControllers();
             });
+
+            
         }
     }
 }
