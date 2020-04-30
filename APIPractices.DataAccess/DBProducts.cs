@@ -1,5 +1,6 @@
 ﻿using APIPractices.DataAccess.interfaces;
 using APIPractices.Models;
+using APIPractices.Models.VM;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -16,6 +17,17 @@ namespace APIPractices.DataAccess
 
         }
 
-        
+       
+    }
+
+    public class DBProductVM : GenericRepository<ProductVM>, IProductVM
+    {
+
+        public DBProductVM(APIPracticesDB db) : base(db)
+        {
+
+        }
+
+
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using APIPractices.Models;
+using APIPractices.Models.VM;
 
 namespace APIPractices.DataAccess.interfaces
 {
@@ -13,4 +14,6 @@ namespace APIPractices.DataAccess.interfaces
         //Task<int> DeleteProduct(ProductsModel product);
         //Task<List<ProductsModel>> GetProducts();
     }
+
+    public interface IProductVM : IGenericRepository<ProductVM> { }
 }

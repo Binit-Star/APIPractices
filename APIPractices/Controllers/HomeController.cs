@@ -23,7 +23,8 @@ namespace APIPractices.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var products = await _home.GetProducts();
+            //_home.GetProductsVM("sp_products");
+            var products = await _home.GetProductsVM("sp_products"); ;
             return Ok(products);
         }
 

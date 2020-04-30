@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using APIPractices.Models;
+using APIPractices.Models.VM;
 
 namespace APIPractices.Services.interfaces
 {
@@ -13,5 +14,6 @@ namespace APIPractices.Services.interfaces
         Task<int> UpdateProduct(ProductsModel product);
         Task<int> DeleteProduct(ProductsModel product);
         Task<List<ProductsModel>> GetProducts();
+        Task<List<ProductVM>> GetProductsVM(string spName);
     }
 }

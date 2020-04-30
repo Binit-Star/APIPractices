@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
@@ -16,6 +17,9 @@ namespace APIPractices.DataAccess.interfaces
         void Save();
         List<T> Get_StoredProc(string Spname);
         List<T> Get_StoredProc2(string Spname, Dictionary<object, object> parms);
+
+        
+
         List<T> Get_StoredProc_Name(T entity, Dictionary<object, object> parms);
         void void_sp(string spname, Dictionary<object, object> parms);
         IEnumerable<T> ExecuteQuery(string spQuery, object[] parameters);
